@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>10 Sec Math Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="10secgame.css" rel="stylesheet">
+    <script src="10secgame.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <button type="button" id="start">Start Game</button>
+      <div class="mathqn">What is  <span id="num1">0</span><span id="eqnsign"> + </span><span id="num2">0</span> ?</div>
+      <div class="playerinput">Your Answer:  <input type="number" id="playeranswer" placeholder=" answer"></div>
+      <div class="timer">timer: <span id="countdowntimer">10</span>  seconds left</div>
+
+
+      <div class="scoreboard">
+        <span id="playerScore">Your Score: </span><span id="pScore">0</span><br>
+        <span id="highestScore">Highest Score: </span><span id="hScore">0</span><br>
+        <button type="button" id="reset">Reset Scoreboard</button>
+      </div>
+
+      <div class="tickingbomb">
+        <img src="unlit-cartoon-bomb.png" id="unlit-bomb" width="417" height="512">
+      </div>
+
+    </div>
+  </body>
+</html>
